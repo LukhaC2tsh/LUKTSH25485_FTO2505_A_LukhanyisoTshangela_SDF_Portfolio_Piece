@@ -28,10 +28,6 @@ img{
     padding: 1.5em;
     margin: 2em;
     padding-top: 0;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    position: relative;
 }
 
 /*header flex:row*/
