@@ -1,15 +1,76 @@
 /*base css*/
 body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #3F3D3D;
     padding: 4em;
 }
 p{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     line-height: 1.5em;
 }
-
-/*card css*/
-.card{
-    background-color: aliceblue;
+img{
+    width: 20%;
+    height:auto;
     border-radius: 20px;
+
+}
+
+/*card or box css*/
+.card{
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    padding: 1.5em;
+    margin: 2em;
+
+}
+.incard{
+    background-color: #E7F0EC;
+    border-radius: 20px;
+    padding: 1.5em;
+    margin: 2em;
+    padding-top: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+/*header flex:row*/
+header{
+    display:flex;
+    flex-direction: row;
+}
+
+/*tools css*/
+.card h3{
+    background-color: #000000;
+    border-radius: 59px;
+    padding:.4em;
+    padding-top:.2em;
+    color: #FFFFFF;
+    position:absolute;
+    top:0;
+    left:50%;
+}
+
+
+/*profeciency css*/
+.pone{
+    border-radius: 20px;
+    background-color: #4A8B70;
+    width: 50%;
+    list-style: none;
+}
+
+.ptwo{
+    border-radius: 20px;
+    background-color: #4A8B70;
+    width: 35%;
+    list-style: none;
+}
+
+.pnone{
+    border-radius: 20px;
+    background-color: #4A8B70;
+    width: 4%;
+    list-style: none;
 }
