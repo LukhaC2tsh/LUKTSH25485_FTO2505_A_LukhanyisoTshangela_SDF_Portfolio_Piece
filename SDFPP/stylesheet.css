@@ -9,3 +9,7 @@ p{
 }
 
 /*card css*/
+.card{
+    background-color: aliceblue;
+    border-radius: 20px;
+}
