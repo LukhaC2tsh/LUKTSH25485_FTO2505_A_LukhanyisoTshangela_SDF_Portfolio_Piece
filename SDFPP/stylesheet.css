@@ -39,20 +39,6 @@ header{
     display:flex;
     flex-direction: row;
 }
-
-/*tools css*/
-.card h3{
-    background-color: #000000;
-    border-radius: 59px;
-    padding:.4em;
-    padding-top:.2em;
-    color: #FFFFFF;
-    position:absolute;
-    top:0;
-    left:50%;
-}
-
-
 /*profeciency css*/
 .pone{
     border-radius: 20px;
