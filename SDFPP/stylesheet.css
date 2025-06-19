@@ -97,15 +97,42 @@ header{
    flex-direction: row;
 }
 /*tools css*/
-.card h3{
+.design, .software, .language{
+    width: 40%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.align{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+}
+.tools h3{
     background-color: #000000;
     border-radius: 59px;
     padding:.4em;
     padding-top:.2em;
+
     color: #FFFFFF;
     position:absolute;
     top:0;
     left:50%;
 }
 
+/*tools css*/
+.hospitality, .callcenter, .generalworker{
+    display: flex;
+    flex-direction: row;
+}
+
+/*footer css*/
+footer{
+    background-color: #D76239;
+    padding:2em;
+    margin:2em;
+    border-radius: 15px;
+}
 
