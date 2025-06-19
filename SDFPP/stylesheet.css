@@ -39,7 +39,13 @@ header{
     display:flex;
     flex-direction: row;
 }
+
 /*profeciency css*/
+.bar ul{
+    color: #4A8B70;
+    margin-left: none;
+    padding-left: none;
+}
 .pone{
     border-radius: 20px;
     background-color: #4A8B70;
@@ -60,7 +66,40 @@ header{
     width: 4%;
     list-style: none;
 }
+.flex{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    flex-wrap: wrap;
+}
 
+/*skills css*/
+.skills ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.skills li{
+    padding: 5px;
+    background-color: #E7F0EC;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+
+/*projects css*/
+.year{
+    width:40%;
+    margin: .5em;
+    height:auto;
+}
+
+/*education css*/
+.school, .qualification, .sundry{
+   display: flex;
+   flex-direction: row;
+}
 /*tools css*/
 .card h3{
     background-color: #000000;
