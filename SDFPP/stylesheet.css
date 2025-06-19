@@ -1,0 +1,11 @@
+/*base css*/
+body{
+    background-color: #3F3D3D;
+    padding: 4em;
+}
+p{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.5em;
+}
+
+/*card css*/
