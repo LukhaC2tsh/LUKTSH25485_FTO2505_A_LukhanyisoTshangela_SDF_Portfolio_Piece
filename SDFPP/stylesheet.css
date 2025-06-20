@@ -106,10 +106,6 @@ header{
 }
 
 /*projects css*/
-.flex{
-    display: flex;
-    flex-direction: row;
-}
 .year{
     width:4em;
     height:auto;
