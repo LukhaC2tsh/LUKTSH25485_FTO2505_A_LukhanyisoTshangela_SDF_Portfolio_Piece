@@ -146,25 +146,6 @@ header{
 
 }
 
-/*keeps logos in a row wrapped
-.design, .software, .language{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 1em;
-}*/
-/*keeps the inner card and h3 blocks in a row*/
-.toolsflex{
-    display: flex;
-    flex-direction: row;
-    align-items: top;
-    flex-wrap: wrap;
-}
-.toolsflex .incard{
-    width: 100%;
-    height: max-content;
-}
 
 
 /*experience css*/
