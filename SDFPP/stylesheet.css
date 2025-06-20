@@ -2,7 +2,7 @@
 body{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #3F3D3D;
-    padding: 4em;
+    padding: 2em;
 }
 h2{
     font-size: 12px;
@@ -12,44 +12,41 @@ h2{
 .card{
     background-color: #FFFFFF;
     border-radius: 20px;
-    width: 100%;
-    height: auto;
     padding:12px;
     margin-bottom: 2em;
 }
 .incard{
     background-color: #E7F0EC;
     border-radius: 20px;
-    padding: 1.5em;
-    margin: 2em;
-    padding-top: 0;
 }
 
-/*header flex:row*/
+/*header flex:row plus css*/
 header{
     display:flex;
     flex-direction: row;
+    padding:0;
+    gap:1em;
+    justify-content: space-evenly;
 }
 
-/*header css*/
-img{
-    width: 55%;
-    height:55%;
+
+.image{
+    width: 50%;
+    height:50%;
     border-radius: 20px;
+    padding:0;
 }
 .name{
-    background-color: #FFFFFF;
     border-radius: 20px;
-    width: 75%;
-    height:55%;
-    padding:12px;
+    width:fit-content;
+    padding: 1em;
 }
 .name h1{
     font-size: 16px;
 }
 .name p{
     font-size: 10px;
-}
+}*/
 
 /*profeciency css*/
 .list ul{
@@ -87,8 +84,7 @@ img{
 .flex{
     display: flex;
     flex-direction: row;
-    gap: 1em;
-    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 .proficiency p, .proficiency li{
     font-size: 12px;
@@ -129,17 +125,65 @@ img{
    flex-direction: row;
    font-size: 8px;
 }
-/*tools css*/
+/*tools css*//*
+.h3 ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: flex start;
+    justify-content: space-evenly;
+    padding-left: 0;
+}
+.h3 li{
+    margin-top: 0;
+    padding:0;
+    font-size: 5px;
+}*/
+/*keeps h3 on top of inner card*/
+.group{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.group .design, .group .software, .group .language{
+    grid-row:2/7;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    background-color: aqua;
+}
+.group h3{
+    grid-row: 1/3;
+    grid-column: 2/3;
+    z-index: 1;
+    background-color: #3F3D3D;
+    font-size: 5px;
+    padding: .5em;
+    border-radius: 59px;
+    text-align: center;
+    margin: auto;
+
+}
+
+/*keeps logos in a row wrapped
 .design, .software, .language{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin: 0;
+    padding: 1em;
+}*/
+/*keeps the inner card and h3 blocks in a row*/
+.toolsflex{
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    flex-wrap: wrap;
 }
-.design img, .software img, .language img{
-    width: 18%;
-    height: 18%;
-    justify-content: center;
+.toolsflex .incard{
+    width: 100%;
+    height: max-content;
 }
+
 
 /*experience css*/
 .hospitality, .callcenter, .generalworker{
