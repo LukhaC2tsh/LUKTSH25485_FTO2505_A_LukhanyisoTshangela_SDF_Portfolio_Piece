@@ -7,6 +7,10 @@ body{
 h2{
     font-size: 12px;
 }
+.flex{
+    display: flex;
+    flex-direction: row;
+}
 
 /*card or box css*/
 .card{
@@ -49,17 +53,16 @@ header{
 }*/
 
 /*profeciency css*/
-.list ul{
-    padding-left:0;
-}
-.bar ul{
-    color: #4A8B70;
-    align-items: left;
-    padding-left: 0;
+.flex .bar{
+    justify-content: space-evenly;
 }
 .flex li{
     list-style: none;
     margin-bottom: 1em;
+    margin-left: 0;
+}
+.list ul{
+    padding-left: 0%;
 }
 .pone{
     border-radius: 3px;
@@ -81,10 +84,7 @@ header{
     width: 10%;
     list-style: none;
 }
-.flex{
-    display: flex;
-    flex-direction: row;
-}
+
 .proficiency p, .proficiency li{
     font-size: 12px;
 }
@@ -106,32 +106,68 @@ header{
 }
 
 /*projects css*/
-.year{
-    width:4em;
-    height:auto;
+.yearly{
+    flex-wrap: wrap;
+}
+.yearly .incard{
+    padding: .5em;
     margin: .5em;
+    width: 40%;
+}
+.yearly .first{
+    background-color: #4A8B70;
+    color:#E7F0EC;
 }
 .year p{
     font-size: 10px;
 }
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.row img{
+    width:10%;
+    height: 10%;
+    align-self:center;
+}
+.row h2{
+    flex-grow: 2;
+}
 /*education css*/
-.school, .qualification, .sundry{
+.education .incard{
    display: flex;
    flex-direction: row;
    font-size: 8px;
+   padding: .5em;
+   margin-bottom: 1em;
 }
+.education .school{
+    background-color: #4A8B70;
+    
+    color:#E7F0EC;
+}
+
 /*tools css*//*
 /*keeps h3 on top of inner card*/
-.group{
+.grid{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(6,1fr);
 }
-.group .design, .group .software, .group .language{
+/*keeps items in a row*/
+.toolsflex{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(1,1fr);
+    gap: 1em;
+}
+
+.group .incard{
     grid-row:2/7;
     grid-column-start: 1;
-    grid-column-end: 5;
-    background-color: aqua;
+    grid-column-end: 4;
+    padding: .3em .5em .3em .5em;
+    gap: 1em;
 }
 .group h3{
     grid-row: 1/3;
@@ -143,16 +179,44 @@ header{
     border-radius: 59px;
     text-align: center;
     margin: auto;
-
+}
+.logo{
+    width:40%;
+}
+.software .logo{
+    height: 30%;
+}
+.group .software, .group .language{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 
 
 /*experience css*/
-.hospitality, .callcenter, .generalworker{
+.experience .incard{
     display: flex;
     flex-direction: row;
     font-size: 8px;
+    margin-bottom: 1em;
+    padding: 1em;
+}
+.callcenter{
+    background-color: #4A8B70;
+    color:#E7F0EC;
+}
+.right{
+    display: inline;
+}
+.left h3{
+    font-size: 10px;
+
+}
+.left sub{
+    font-size: 8px;
+    display: flex;
+    flex-direction: row;
 }
 
 /*footer css*/
