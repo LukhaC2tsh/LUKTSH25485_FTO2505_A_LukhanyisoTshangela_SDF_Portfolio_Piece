@@ -3,6 +3,8 @@ body{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #3F3D3D;
     padding: 2em;
+    line-height: 1em;
+    list-style-position: outside;
 }
 h2{
     font-size: 12px;
@@ -15,7 +17,9 @@ h2{
     display: flex;
     flex-direction: row;
 }
-
+ul{
+    
+}
 /*card or box css*/
 .card{
     background-color: #FFFFFF;
@@ -145,11 +149,14 @@ header{
    padding: .5em;
    margin-bottom: 1em;
 }
-.education .school{
+.certificate{
     background-color: #4A8B70;
     color:#E7F0EC;
 }
 
+.matric hr, .diploma hr{
+    background-color: #020202;
+}
 /*tools css*//*
 /*keeps h3 on top of inner card*/
 .grid{
@@ -169,7 +176,7 @@ header{
     grid-row:2/7;
     grid-column-start: 1;
     grid-column-end: 4;
-    padding: .3em .5em .3em .5em;
+    padding: 1em .5em .3em .5em;
     gap: 1em;
 }
 .group h3{
@@ -177,9 +184,10 @@ header{
     grid-column: 2/3;
     z-index: 1;
     background-color: #3F3D3D;
-    font-size: 5px;
-    padding: .5em;
-    border-radius: 59px;
+    color: #ffffff;
+    padding: 0 .7em;
+    font-size: 10px;
+    border-radius: 15px;
     text-align: center;
     margin: auto;
 }
@@ -210,9 +218,6 @@ header{
     color:#E7F0EC;
 }
 
-.main{
-    line-height: 2em;
-}
 .heading .headingleft{
     flex-grow: 2;
 }
@@ -221,6 +226,9 @@ header{
     border-radius: 59px;
     padding: .2em 1em;
 }
+.left{
+    white-space: nowrap;
+}
 .left h3{
     font-size: 10px;
 }
@@ -228,9 +236,10 @@ header{
     font-size: 8px;
     display: flex;
     flex-direction: row;
+    
 }
 sub hr{
-    width: 20px;
+    width: 10px;
     height: 1px;
     background-color: #E7F0EC;
     transform: rotate(90deg);
@@ -239,7 +248,6 @@ sub hr{
 }
 .generalworker hr, .hospitality hr{
     background-color: #020202;
-    width:50px;
 }
 
 /*footer css*/
@@ -247,5 +255,26 @@ footer{
     background-color: #D76239;
     padding:2em;
     border-radius: 15px;
+    color: #E7F0EC;
+}
+footer hr{
+    width: 10px;
+    height: 1px;
+    background-color: #E7F0EC;
+    transform: rotate(90deg);
+    border:0;
+    align-self: center;
+    width:50px;
+}
+.email_mobile{
+    display: flex;
+    flex-direction: row;
+}
+footer p{
+    justify-content: center;
 }
 
+/*Desktop media tags*/
+@media screen {
+    
+}
