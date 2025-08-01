@@ -11,7 +11,7 @@
     }
     
     h2{
-        font-size: 1em;
+        font-size: .9em;
     }
     .flex{
         display: flex;
@@ -20,10 +20,6 @@
     .stack{
         display: flex;
         flex-direction: row;
-    }
-
-    h2{
-        font-size: 1.5em;
     }
     
 /*-------------------------*/
@@ -48,34 +44,45 @@
     }
 
 
-    .image{
-        width: 50%;
+    header img{
+        width: 40%;
         border-radius: 20px;
         padding:0;
+        aspect-ratio:16/9;
+        object-fit: cover;
+        object-position: top;
+    }
+    .image{
+        background-color: #79afdc;
     }
     .name{
         border-radius: 20px;
         width:50%;
         padding: 1em;
+        line-height: 1em;
     }
     .name h1{
-        font-size: 2em;
+        font-size: 1.5em;
+        line-height: 1em;
     }
     .name p{
-        font-size: 1em;
+        font-size: .7em;
     }*/
 /*-------------------------*/
     /*profeciency css*/
-    .bar{
-        justify-content: space-evenly;
+   
+    .bar li{
+        flex-grow: 2;
     }
-
+    
     .flex li{
         list-style: none;
         margin-bottom: 1em;
         margin-left: 0;
     }
-    
+    .list ul{
+        padding-left: 0%;
+    }
     .bar li{
         color: #4A8B70;
     }
@@ -113,11 +120,11 @@
         flex-wrap: wrap;
     }
     .skills li{
-        padding: 5px;
+        padding: .7em;
         margin:.3em;
         background-color: #E7F0EC;
         border-radius: 20px;
-        font-size: 10px;
+        font-size: .7em;
         justify-content:space-evenly;
     }
 /*-------------------------*/
@@ -135,7 +142,8 @@
         color:#E7F0EC;
     }
     .year p{
-        font-size: 1em;
+        font-size: .7em;
+        line-height: 2em;
     }
     .row{
         display: flex;
@@ -146,15 +154,22 @@
         height: 10%;
         align-self:center;
     }
+
     .row h2{
         flex-grow: 2;
+    }
+    .incard h2{
+        line-height: 2em;
+    }
+    .second img, .third img, .fourth img{
+        opacity: 0;
     }
 /*-------------------------*/
     /*education css*/
     .education .incard{
     display: flex;
     flex-direction: column;
-    font-size: 8px;
+    font-size: .7em;
     padding: 1.5em;
     margin-bottom: 1em;
     }
@@ -162,10 +177,18 @@
         background-color: #4A8B70;
         color:#E7F0EC;
     }
+    .education .right ul{
+        font-size: 1em;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 2em;
+
+    }
 
     .matric hr, .diploma hr{
         background-color: #020202;
     }
+
+
 /*-------------------------*/
     /*tools css*//*
     /*keeps h3 on top of inner card*/
@@ -195,8 +218,8 @@
         z-index: 1;
         background-color: #3F3D3D;
         color: #ffffff;
-        padding: 0 .7em;
-        font-size: 10px;
+        padding: .7em .7em;
+        font-size: .7em;
         border-radius: 15px;
         text-align: center;
         margin: auto;
@@ -218,9 +241,10 @@
     .experience .incard{
         display: flex;
         flex-direction: column;
-        font-size: 8px;
+        font-size: .7em;
         margin-bottom: 1em;
         padding: 1.5em;
+        line-height: 2em;
     }
     .callcenter{
         background-color: #4A8B70;
@@ -229,31 +253,32 @@
 
     .heading .headingleft{
         flex-grow: 2;
+        padding-top: .7em;
     }
     .heading .buttonright{
         background-color: #D76239;
-        border-radius: 59px;
-        padding: .2em 1em;
+        border-radius: 2em;
+        padding: .2em .5em .1em .4em;
     }
     .left{
         white-space: nowrap;
     }
     .left h3{
-        font-size: 10px;
     }
     .left sub{
-        font-size: 8px;
         display: flex;
         flex-direction: row;
         
     }
     sub hr{
-        width: 10px;
-        height: 1px;
+        width: 1em;
+        height: .1em;
         background-color: #E7F0EC;
         transform: rotate(90deg);
         border:0;
         align-self: center;
+        margin-left:1em;
+        margin-right:1em;
     }
     .generalworker hr, .hospitality hr{
         background-color: #020202;
@@ -273,14 +298,22 @@
         transform: rotate(90deg);
         border:0;
         align-self: center;
-        width:50px;
     }
-    .email_mobile{
+    .invisible{
+        display: none;
+    }
+    .contact-info{
         display: flex;
         flex-direction: row;
     }
     footer p{
         justify-content: center;
+    }
+    footer h3{
+        line-height: 2em;
+    }
+    a{
+        display: none;
     }
 }
 /*-------------------------*/
@@ -288,6 +321,7 @@
 
 /*Desktop media tags*/
 @media only screen and (min-width:600px){
+    
     body{
         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         background-color: #3F3D3D;
@@ -297,7 +331,7 @@
     }
     
     h2{
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
     .flex{
         display: flex;
@@ -327,11 +361,18 @@
         flex-direction: row;
         gap: 1em;
     }
-    .image{
-        width: 40%;
-        height:15em;
+    header img{
+        width: 30%;
+        height:auto;
         border-radius: 20px;
         padding:0;
+        aspect-ratio:16/9;
+        object-fit: cover;
+        object-position: top;
+    }
+    .image{
+        padding:0;
+        background-color: #79afdc;
     }
     .name{
         border-radius: 20px;
@@ -340,6 +381,7 @@
     }
     .name h1{
         font-size: 2em;
+        line-height: 1em;
     }
     .name p{
         font-size: 1em;
@@ -347,10 +389,7 @@
     }
 /*-------------------------*/
     /*profeciency css*/
-    .prog{
-        justify-content: space-around;
-
-    }
+  
     .bar li{
         flex-grow: 2;
     }
@@ -448,6 +487,7 @@
         display: flex;
         flex-direction: row;
     }
+
     .row img{
         width:10%;
         height: 10%;
@@ -455,6 +495,9 @@
     }
     .row h2{
         flex-grow: 2;
+    }
+    .incard h2{
+        line-height: 1.2em;
     }
 /*-------------------------*/
  /*education tools flex css*/
@@ -472,7 +515,7 @@
     padding: 1.5em;
     margin-bottom: 1em;
     }
-    .right li{
+    .right ul{
         line-height: 2em;
     }
     .certificate{
@@ -546,8 +589,8 @@
     }
     .heading .buttonright{
         background-color: #D76239;
-        border-radius: 59px;
-        padding: .2em 1em;
+        border-radius: 1em;
+        padding: .5em 1em;
     }
     .left{
         white-space: nowrap;
@@ -583,20 +626,34 @@
         color: #E7F0EC;
     }
     footer hr{
-        width: 10px;
-        height: 1px;
-        background-color: #E7F0EC;
+        width: 1em;
+        height: .1em;
+        background-color: #3F3D3D;
         transform: rotate(90deg);
         border:0;
         align-self: center;
-        width:50px;
+        margin:1em;
+        
     }
-    .email_mobile{
+    .contact-info{
         display: flex;
         flex-direction: row;
+        justify-content: flex-start;
     }
     footer p{
-        justify-content: center;
+        font-size: 1em;
+        color: #3F3D3D;
+    }
+    footer h3{
+        font-size: 1.5em;
+    }
+    a{
+        color:#3F3D3D;
+        font-size: 1em;
+        display: inline;
+        text-decoration: none;
+        margin-top: 1em;
+        margin-bottom: 1em;
     }
 }
   /*-------------------------*/  
