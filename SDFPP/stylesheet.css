@@ -263,8 +263,7 @@
     .left{
         white-space: nowrap;
     }
-    .left h3{
-    }
+   
     .left sub{
         display: flex;
         flex-direction: row;
